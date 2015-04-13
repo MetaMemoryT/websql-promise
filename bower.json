@@ -1,7 +1,7 @@
 {
   "name": "websql-promise",
   "main": "websql-promise.js",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "homepage": "https://github.com/MetaMemoryT/websql-promise",
   "authors": [
     "Sean Usick <sean258@gmail.com>"
