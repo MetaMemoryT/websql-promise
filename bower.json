@@ -1,0 +1,18 @@
+{
+  "name": "websql-promise",
+  "main": "websql-promise.js",
+  "version": "0.0.0",
+  "homepage": "https://github.com/MetaMemoryT/websql-promise",
+  "authors": [
+    "Sean Usick <sean258@gmail.com>"
+  ],
+  "description": "Light promise wrapper over WebSQL, and ES6 iterator",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
