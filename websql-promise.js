@@ -1,8 +1,5 @@
-function DB(options, openDatabaseFunction) {
-  var dbf = openDatabaseFunction ? openDatabaseFunction : openDatabase;
-  // TODO if options is a string:
-  // this.db = dbf(name, '1.0', 'Websql Promise', 5 * 1024 * 1024);
-  this.db = dbf(options);
+function DB(options, dbobject) {
+  this.db = dbobject;
 }
 
 DB.prototype.executeSQL = function(query, args) {
@@ -35,22 +32,3 @@ SQLIterator.prototype[Symbol.iterator] = function*() {
     yield this.rows.item(i);
   }
 };
-
-
-
-/*
-DB.prototype.sqlIterator = function(rows) {
-  var nextIndex = 0;
-
-  return {
-    next: function() {
-      return nextIndex < rows.length ? {
-        value: rows.item(nextIndex++),
-        done: false
-      } : {
-        done: true
-      };
-    }
-  };
-};
-*/
