@@ -1,8 +1,8 @@
-function DB(options, dbobject) {
+function DB(dbobject) {
   this.db = dbobject;
 }
 
-DB.prototype.executeSQL = function(query, args) {
+DB.prototype.executeSql = function(query, args) {
   var that = this;
   return new Promise(function(resolve, reject) {
     that.db.transaction(function(t) {
