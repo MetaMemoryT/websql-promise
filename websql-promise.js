@@ -32,3 +32,5 @@ SQLIterator.prototype[Symbol.iterator] = function*() {
     yield this.rows.item(i);
   }
 };
+
+module.exports = DB;
