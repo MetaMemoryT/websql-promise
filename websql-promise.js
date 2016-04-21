@@ -10,9 +10,10 @@ DB.prototype.executeSql = function(query, args) {
         function(t, r) {
           resolve(r);
         },
-        function(e) {
-          console.log(e);
-          reject(e);
+        //  function(e) {
+       function(tx,err)
+          console.log(err);
+          reject(err);
         });
     });
   });
